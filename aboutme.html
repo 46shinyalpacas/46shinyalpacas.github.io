@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- Infro about the page -->
+         <title>Page Title</title>
+         <link rel = "stylesheet" href = "aboutme.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+         body {
+           margin: 0;
+           font-family: Arial, Helvetica, sans-serif;
+         }
+
+         .topnav {
+           overflow: hidden;
+           background-color: #333;
+         }
+
+         .topnav a {
+           float: left;
+           color: #f2f2f2;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+           font-size: 17px;
+         }
+
+         .topnav a:hover {
+           background-color: #ddd;
+           color: black;
+         }
+
+         .topnav a.active {
+           background-color: #4CAF50;
+           color: white;
+         }
+         </style>
+    </head>
+  <body>
+
+  <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a class="active" href="#about">About</a>
+    </div>
+
+    <div style="padding-left:16px">
+    </div>
+
+    <button type="button" onclick="myGreen()">Change Color to Green</button>
+    <button type="button" onclick="myPink()">Change Color to Pink</button>
+    <button type="button" onclick="myBlue()">Change Color to Blue</button>
+    <button type="button" onclick="myWhite()">Change Color to White</button>
+    <button type= "button" onclick="myGray()">Change Color to Gray</button>
+
+    <script>
+    function myGreen()
+    {
+    document.body.style.backgroundColor= "green";
+    }
+    function myPink()
+    {
+    document.body.style.backgroundColor= "pink";
+    }
+    function myBlue()
+    {
+    document.body.style.backgroundColor= "blue";
+    }
+    function myWhite()
+    {
+    document.body.style.backgroundColor= "white";
+    }
+    function myGray()
+    {
+    document.body.style.backgroundColor= "gray";
+    }
+    </script>
+
+<center><h1> All About Kirsten Go </h1>
+<center><a href = "https://www.google.com/"> Go to Google </a> </center>
+<br></br>
+
+<p>Hi my name is Kirsten Go and I am 17 years old. I am an incoming senior and I have to go to college soon. I live in San Marino, CA with my parents, my older sister, and my two dogs Hershey and Cocoa</p>
+<center><img id = "my_dogs"  alt = "This is a picture of my two dogs, Hershey and Cocoa. Hershey is a mutt of unknown breed and Cocoa is half Yorkshire Terrier and Maltese" src = "two_dogs.png" alt = "Hershey and Cocoa" width="400" height="400">
+
+
+<button type="button" onclick="document.getElementById('my_dogs').style.display='block'">Show Me!</button>
+
+<button type="button" onclick="document.getElementById('my_dogs').style.display='none'">Hide Me!</button>
+
+<br></br>
+
+<h3> My Summer </h3>
+<div> I'm doing the Girls Who Code Summer Immersion program and it's super fun! </div>
+<center><img id = "girls_who_code" alt = "This is the logo of the organization known as Girls Who Code" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GWC_logo_2016_.png/1200px-GWC_logo_2016_.png" alt = "Girls Who Code logo" width="200" height="150">
+
+<button type="button" onclick="document.getElementById('girls_who_code').style.display='block'">Show Me!</button>
+<button type="button" onclick="document.getElementById('girls_who_code').style.display='none'">Hide Me!</button>
+<br></br>
+
+<h3>Likes and dislikes</h3>
+<p> I like hanging out with my dogs and my family. I also like to surf the web in my free time. I dislike eating vegetables and doing homework</p>
+<br></br>
+
+<h3> A Random Video that I found </h3>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
